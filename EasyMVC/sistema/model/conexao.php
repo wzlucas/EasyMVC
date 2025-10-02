@@ -1,4 +1,3 @@
-
 <?php
 class Conexao {
     private $server;
@@ -6,10 +5,10 @@ class Conexao {
     private $usuario;
     private $senha;
     function __construct() {
-        $this->server = '[Informe aqui o servidor]';
-        $this->banco = '[Informe aqui o seu Banco de dados]';
-        $this->usuario = '[Informe aqui o usuário do banco de dados]';
-        $this->senha = '[Informe aqui a senha do banco de dados]';
+        $this->server = 'localhost';
+        $this->banco = 'db_empresas';
+        $this->usuario = 'root';
+        $this->senha = '';
     }
     function conectar() {
         try {
